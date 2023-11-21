@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Downloader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+        animation: scaleAndColorChange 1s infinite;
+        background-color: #343D46;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        }
+
+@keyframes scaleAndColorChange {
+  0% {
+      transform: scale(1);
+      background-color: #65737e;
+  }
+  50% {
+      transform: scale(1.1);
+      background-color: #4f5b66;
+  }
+  100% {
+      transform: scale(1);
+      background-color: #343d46;
+  }
+}
+
+        @media screen and (max-width: 600px) {
+            form {
+                padding: 10px;
+            }
+
+            input {
+                box-sizing: border-box;
+            }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            margin-right: 15px;
+            font-size: 20px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .social-icons {
+                text-align: center;
+            }
+
+            .social-icons a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GitHub Repository Downloader</h1>
+    <form method="post" action="download.php">
+        <label for="repository_url">GitHub Repository URL:</label>
+        <input type="text" name="repository_url" required>
+        <button type="submit">Download Repository</button>
+    </form>
+
+    <div class="social-icons">
+        <a href="https://instagram.com/bojasb_" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Bakumusal" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/@bakumusalchannel4424" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="copyright">
+        &copy; 2023 Bakumusal. All rights reserved.
+    </div>
+</body>
+
+</html>
